@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andromeda</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        fetch('../Navigation/navigation.html')
+            .then(response => response.text())
+            .then(html => document.querySelector('header').insertAdjacentHTML('afterend', html));
+    </script>
+</header>
+<body>
+    <div class="content">
+        <img src="images.jpg" alt="Alps" class="wallpaper1">
+        <p>Andromeda is a website that sells watches with new designs and features.</p>
+        <p id="mission">Our mission is to provide high-quality, stylish watches that combine functionality with elegance. Explore our collection and find the perfect timepiece for any occasion.</p>
+        <img src="831859.jpg" alt="Andromeda Watch" class="wallpaper2">
+        <img src="555699.jpg" alt="Andromeda Star" class="wallpaper3">
+    </div>
+    <!-- Products Section 
+    <div class="products">
+        <script>
+            fetch('../Products/products.html')
+                .then(response => response.text())
+                .then(html => document.querySelector('.products').innerHTML += html);
+        </script>
+        -->
+    </div>
+    </body>
+    <footer>
+        <div class="footer">
+            <p>&copy; 2026 Andromeda. All rights reserved.</p>
+        </div>
+    </footer>
+</html>
